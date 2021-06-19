@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: #58B1DD;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  text-decoration: underline;
+  text-decoration-color: #58B1DD;
+}
