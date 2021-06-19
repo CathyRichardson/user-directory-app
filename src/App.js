@@ -32,8 +32,8 @@ class App extends React.Component {
             </p>
           </section>
           <footer>
-            <a>Previous</a>
-            <a>Next</a>
+            <a class="previous"> &lt; Previous</a>
+            <a class="next"> Next &gt; </a>
           </footer>
         </div>
       </div>

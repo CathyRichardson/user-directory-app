@@ -71,6 +71,11 @@ a {
   padding: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 h2 {
   text-align: right;
 }
