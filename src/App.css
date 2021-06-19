@@ -45,6 +45,7 @@
 nav {
   background-color: #58B1DD;
   padding: 25px;
+  font-weight: bold;
 }
 
 .bold {
@@ -63,12 +64,14 @@ h1 {
 
 section {
   background-color: #EBEBEB;
-  padding: 25px;
+  padding: 0px 10px 25px 25px;
 }
 
 a {
   color: white;
   padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 footer {
@@ -82,4 +85,20 @@ h2 {
 
 p {
   margin: 5px 0px;
+}
+
+ol {
+  margin-left: 45px;
+}
+
+button {
+  background-color: #58B1DD;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 6px 8px;
+  cursor: pointer;
 }
