@@ -20,14 +20,21 @@ class App extends React.Component {
           <section>
             <h2>{`${data[0].id}/${data.length}`}</h2>
             <h1>{`${data[0].name.first} ${data[0].name.last}`}</h1>
+            <br />
             <p> <span class="bold">From:</span> {`${data[0].city}, ${data[0].country}`}</p>
             <p> <span class="bold">Job Title:</span> {data[0].title} </p>
             <p> <span class="bold">Employer:</span> {data[0].employer} </p>
+            <br />
             <p> <span class="bold">Favorite Movies:</span>
-              {data[0].favoriteMovies.map((e, i) => <ol> <li key={i}>  {e} </li> </ol>)} </p>
+              <ol> 
+                {data[0].favoriteMovies.map((e, i) => <li key={i}> {e} </li>)}
+              </ol>
+            </p>
           </section>
-          <a>Previous</a>
-          <a>Next</a>
+          <footer>
+            <a>Previous</a>
+            <a>Next</a>
+          </footer>
         </div>
       </div>
     );

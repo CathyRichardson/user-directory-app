@@ -1,5 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -39,6 +44,7 @@
 
 nav {
   background-color: #58B1DD;
+  padding: 25px;
 }
 
 .bold {
@@ -48,4 +54,27 @@ nav {
 h1 {
   text-decoration: underline;
   text-decoration-color: #58B1DD;
+}
+
+.background {
+  background-color: #222222;
+  padding: 45px;
+}
+
+section {
+  background-color: #EBEBEB;
+  padding: 25px;
+}
+
+a {
+  color: white;
+  padding: 10px;
+}
+
+h2 {
+  text-align: right;
+}
+
+p {
+  margin: 5px 0px;
 }
