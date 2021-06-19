@@ -30,7 +30,7 @@ class App extends React.Component {
       <div className="App">
         <nav>Home</nav>
         <div className="background">
-          <User user={data[this.state.currentUser]} totalUsers={data.length} />
+          <User user={data[this.state.currentUser]} userIndex={this.state.currentUser +1} totalUsers={data.length} />
           <footer>
             <a className="previous" onClick={this.handleClickPrevious}> &lt; Previous</a>
             <div className="buttons">
