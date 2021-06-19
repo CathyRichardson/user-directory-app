@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      currentUser: 0, //index of user to display 
+      currentUser: 0, 
     }
   }
 
@@ -24,21 +24,27 @@ class App extends React.Component {
     }
   }
 
+  handleClickHome = () => {
+    this.setState({ currentUser: 0 })
+  }
+
 
   render() {
     return (
       <div className="App">
-        <nav>Home</nav>
+        <nav>
+          <a className="home" onClick={this.handleClickHome}>Home</a>
+        </nav>
         <div className="background">
-          <User user={data[this.state.currentUser]} userIndex={this.state.currentUser +1} totalUsers={data.length} />
+          <User user={data[this.state.currentUser]} userIndex={this.state.currentUser + 1} totalUsers={data.length} />
           <footer>
-            <a className="previous" onClick={this.handleClickPrevious}> &lt; Previous</a>
+            <a onClick={this.handleClickPrevious}> &lt; Previous</a>
             <div className="buttons">
               <button>Edit</button>
               <button>Delete</button>
               <button>New</button>
             </div>
-            <a className="next" onClick={this.handleClickNext}> Next &gt; </a>
+            <a onClick={this.handleClickNext}> Next &gt; </a>
           </footer>
         </div>
       </div>

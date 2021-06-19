@@ -11,7 +11,6 @@ export default function User(props) {
             <p> <span className="bold">Job Title:</span> {props.user.title} </p>
             <p> <span className="bold">Employer:</span> {props.user.employer} </p>
             <br />
-
             <Favorites userFavorites={props.user.favoriteMovies} />
         </section>
     )
